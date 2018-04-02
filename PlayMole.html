@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Mole Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<style>
 		.mole {
@@ -53,18 +54,19 @@
 		}
 
 		.score {
-			font-family: arial;
-			font-size: 40px; 
+			font-family: 'Press Start 2P', cursive;
+			font-size: 20px; 
 			position: absolute;
-			left: 48%;
+			left: 45%;
 			z-index: 3;
 		}
-
+		body{
+			font-family: 'Press Start 2P', cursive;
+		}
 	</style>
 	<script>
 		jQuery(document).ready(function() {
 			var add = 0;
-			
 			function gameover() {
 				jQuery('.mole').animate({'top':'100%'}, 300);
 				jQuery('.score').html('Game Over :(');
@@ -92,7 +94,7 @@
 		});
 	</script>
 </head>
-<body>
+<body class="body">
 	<div class="score">Score: 0</div>
 
 	<div class="mole" id="mole_1">
