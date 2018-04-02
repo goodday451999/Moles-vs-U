@@ -63,6 +63,7 @@
 		body{
 			font-family: 'Press Start 2P', cursive;
 		}
+
 	</style>
 	<script>
 		jQuery(document).ready(function() {
@@ -93,8 +94,18 @@
 			start();
 		});
 	</script>
+	<script type="text/javascript">
+		var i = 0;
+		function change() {
+  		var doc = document.getElementById("background");
+  		var color = ["pink", "cyan", "rgb(240,242,240)"];
+  		doc.style.backgroundColor = color[i];
+  		i = (i + 1) % color.length;
+		}
+		setInterval(change, 2000);
+	</script>
 </head>
-<body class="body">
+<body id="background">
 	<div class="score">Score: 0</div>
 
 	<div class="mole" id="mole_1">
