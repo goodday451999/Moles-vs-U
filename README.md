@@ -4,3 +4,6 @@ A simple game wherr four moles will try to reach the top but you have to be read
 Screenshot of the game is uploaded.
 
 *This is developed by using HTML5 CSS and jQuery.(CSS and jQuery codes are embedded in the HTML file)*
+
+
+<img src="https://i.imgur.com/2kav81P.png" width="1500" height="500"/>
